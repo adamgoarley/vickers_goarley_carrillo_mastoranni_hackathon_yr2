@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet">
     <title>Ontario Tourism</title>
 </head>
 <body>
     <header>
-        <input type="text" placeholder="Search..">
-        <img src="" alt="Avatar">
+    <div class="container">
+  <input type="text" placeholder="Search...">
+  <div class="search"></div>
+</div>
+
     </header>
 
     <main>
         <section id="Featured" >
            <h2 class="">Featured</h2>  <!-- ---------NEEDS TO BE SLIDING IMAGES--------- -->
-            
-            <img src="images/landing.jpg" alt="landing image">
+           <div class="featureCon">
+                <img src="./public/images/test.jpg" alt="landing image">
+           </div>
         </section>
 
         <section id="Categories">
@@ -63,30 +68,38 @@
         <section id="AroundYou">
             <h2>Around You</h2>
 
-            <div id="aroundYou_boxs ">
-                        <div class="cat1">
-                            <img class="catImgs" src="./public/images/test.jpg" alt="">
-                            <h3 class="">TEXT</h3>
+            <div id="aroundYou_boxs">
+                        <div class="cat1 box">
+                            <img class="boxImgs" src="./public/images/test.jpg" alt="">
+                            <h3>Victoria Park</h3>
+                            <p>Nature</p>
+                            <h3>London, ON</h3>
                         </div>
     
-                        <div class="cat2">
-                            <img class="catImgs" src="./public/images/test.jpg" alt="">
-                            <h3 class="">TEXT</h3>
+                        <div class="cat2 box">
+                            <img class="boxImgs" src="./public/images/test.jpg" alt="">
+                            <h3>Masonville Mall</h3>
+                            <p>Entertainment</p>
+                            <h3>London, ON</h3>
                         </div>
     
-                        <div class="cat3">
-                            <img class="catImgs" src="./public/images/test.jpg" alt="">
-                            <h3 class="">TEXT</h3>
+                        <div class="cat3 box">
+                            <img class="boxImgs" src="./public/images/test.jpg" alt="">
+                            <h3>Western University</h3>
+                            <p>Sightseeing</p>
+                            <h3>London, ON</h3>
                         </div>
     
-                        <div class="cat4">
-                            <img class="catImgs" src="./public/images/test.jpg" alt="">
-                            <h3 class="">TEXT</h3>
+                        <div class="cat4 box">
+                            <img class="boxImgs" src="./public/images/test.jpg" alt="">
+                            <h3>Cineplex</h3>
+                            <p>Entertainment</p>
+                            <h3>London, ON</h3>
                         </div>
             </div>
 
             <div id="catButton">
-                <p>View All</p>
+                <a href="#" class="catButton">View All</a>
             </div>
             
         </section>
