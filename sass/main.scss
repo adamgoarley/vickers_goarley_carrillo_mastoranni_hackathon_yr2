@@ -3,3 +3,308 @@
 
 // these are some main little styling addons
 
+body
+{
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3
+{
+    font-family: 'Helvetica', 'Oswald', sans-serif;
+    margin: 0;
+}
+
+p 
+{
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+// ----Search Bar----
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+
+.container {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+  height: 100px;
+  .search {
+    position: absolute;
+    margin: auto;
+    top: -763px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: crimson;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    // box-shadow: 0 0 25px 0 crimson;
+    &:hover {
+      cursor: pointer;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 22px;
+      right: 0;
+      bottom: 0;
+      left: 22px;
+      width: 12px;
+      height: 2px;
+      background: white;
+      transform: rotate(45deg);
+      transition: all .5s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: -5px;
+      right: 0;
+      bottom: 0;
+      left: -5px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: all .5s;
+    }
+  }
+  input {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: none;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: crimson;
+    color: white;
+    text-shadow: 0 0 10px crimson;
+    padding: 0 80px 0 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px 0 crimson,
+                0 20px 25px 0 rgba(0, 0, 0, 0.2);
+    // box-shadow: inset 0 0 25px 0 rgba(0, 0, 0, 0.5);
+    transition: all 1s;
+    opacity: 0;
+    z-index: 5;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      width: 300px;
+      opacity: 1;
+      cursor: text;
+    }
+    &:focus ~ .search {
+      right: -250px;
+      background: #151515;
+      z-index: 6;
+      &::before {
+        top: 0;
+        left: 0;
+        width: 25px;
+      }
+      &::after {
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 2px;
+        border: none;
+        background: white;
+        border-radius: 0%;
+        transform: rotate(-45deg);
+      }
+    }
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+      font-weight: bolder;
+    }
+  }
+}
+
+.featureCon
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#Featured img
+{
+    height: 166px;
+    width: 275px;
+    border-radius: 7px;
+}
+
+#Featured h2
+{
+    font-size: 32px;
+    margin-bottom: 11px;
+}
+
+
+.catImgs
+{
+    height: 75px;
+    width: 162px;
+    border-radius: 7px;
+}
+
+#Categories h2
+{
+    font-size: 32px;
+    margin-bottom: 0px;
+    margin-left: 11px;
+}
+
+#category_boxs
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cat
+{
+    position: relative;
+    margin-top: 10px;
+}
+
+.cat1Text
+{
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#catButton
+{
+    display: flex;
+    justify-content: center;
+}
+
+.catButton {
+    border: 2px solid #307BC6;
+	border-radius: 50px;
+	display:inline-block;
+	cursor:pointer;
+	color: #307BC6;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: lighter;
+	padding: 7px 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 0 auto; //-----!!!!!!!!!BUTTON NEEDS TO BE CENTERED!!!!!!!!-------
+}
+
+.catButton:hover 
+{
+    background-color:#307BC6;
+    transition: ease-in;
+    color: white;
+}
+.catButton:active 
+{
+	position:relative;
+    top:1px;
+    
+}
+
+
+#AroundYou h2
+{
+    font-size: 32px;
+    margin-left: 11px;
+}
+
+.boxImgs
+{
+    height: 102px;
+    width: 162px;
+    border-radius: 7px;
+}
+
+#aroundYou_boxs
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box
+{
+    height: 182px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: start;
+    
+}
+
+.box h3
+{
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 7px;
+}
+
+.box p
+{
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0;
+    margin-left: 7px;
+}
+
+.cat3, .cat4
+{
+    margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 765px) {
+    #Featured img
+{
+    height: 256px;
+    width: 575px;
+    border-radius: 7px;
+}
+
+#Featured h2
+{
+    font-size: 32px;
+    margin-bottom: 11px;
+}
+
+#category_boxs
+{
+    max-width: 560px;
+
+}
+
+}
