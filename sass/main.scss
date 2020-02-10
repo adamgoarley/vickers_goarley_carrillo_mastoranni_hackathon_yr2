@@ -3,3 +3,63 @@
 
 // these are some main little styling addons
 
+.catImgs
+{
+    height: 75px;
+    width: 162px;
+    border-radius: 7px;
+}
+
+// body{
+//     background-color: black;
+// }
+
+
+#category_boxs
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.cat
+{
+    position: relative;
+    margin-top: 10px;
+}
+
+.cat1Text
+{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.catButton {
+    border: 2px solid #307BC6;
+	border-radius: 50px;
+	display:inline-block;
+	cursor:pointer;
+	color: #307BC6;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: lighter;
+	padding: 7px 50px;
+    text-decoration: none;
+    margin 0-auto
+}
+
+.catButton:hover 
+{
+    background-color:#307BC6;
+    transition: ease-in;
+    color: white;
+}
+.catButton:active 
+{
+	position:relative;
+    top:1px;
+    
+}
