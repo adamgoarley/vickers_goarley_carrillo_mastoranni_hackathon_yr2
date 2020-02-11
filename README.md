@@ -43,20 +43,17 @@ $ npm i -s mysql
 
 ## Browser Capability 
 
-* Chrome - %
-* Firefox - %
-* Safari - %
+* Chrome - 90%
+* Firefox - 90%
+* Safari - 80%
 
-### Issues
-
-* 
 
 ## Authors
 
-* **Graham Vickers** - *Lead Backend Developer, Assistant Frontend Developer, Lead Motion Design* - [Fanshawe College](https://github.com/grahamvickers)
-* **Lucas Mastoranni** - *Lead Project Manager, Assistant Backend Developer* - [Fanshawe College](https://github.com/lmastroianni)
-* **Adam Goarley** - *Lead Frontend Developer, Assistant Backend Developer* - [Fanshawe College](https://github.com/adamgoarley)
-* **Ben Carrillo** - *Lead Design & Branding* - [Fanshawe College](https://github.com/carrillobenjamin)
+* **Graham Vickers** - *Lead Backend Developer, Assistant Frontend Developer, Lead Motion Design* - [Fanshawe College Student](https://github.com/grahamvickers)
+* **Lucas Mastoranni** - *Lead Project Manager, Assistant Backend Developer* - [Fanshawe College Student](https://github.com/lmastroianni)
+* **Adam Goarley** - *Lead Frontend Developer, Assistant Backend Developer* - [Fanshawe College Student](https://github.com/adamgoarley)
+* **Ben Carrillo** - *Lead Design & Branding* - [Fanshawe College Student](https://github.com/carrillobenjamin)
 
 ## Acknowledgments
 
