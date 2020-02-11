@@ -53,7 +53,7 @@ $ npm i -s mysql
 
 ## Authors
 
-* **Graham Vickers** - *Lead Backend Developer, Assistant Assistant Developer, Lead Motion Design* - [Fanshawe College](https://github.com/grahamvickers)
+* **Graham Vickers** - *Lead Backend Developer, Assistant Frontend Developer, Lead Motion Design* - [Fanshawe College](https://github.com/grahamvickers)
 * **Lucas Mastoranni** - *Lead Project Manager, Assistant Backend Developer* - [Fanshawe College](https://github.com/lmastroianni)
 * **Adam Goarley** - *Lead Frontend Developer, Assistant Backend Developer* - [Fanshawe College](https://github.com/adamgoarley)
 * **Ben Carrillo** - *Lead Design & Branding* - [Fanshawe College](https://github.com/carrillobenjamin)
