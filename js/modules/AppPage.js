@@ -2,14 +2,14 @@ export default {
     template: `
     <section>
     <section id="Featured" >
-    <h2 class="">Featured</h2>  <!-- ---------NEEDS TO BE SLIDING IMAGES--------- -->
+    <h2 class="">FEATURED</h2>  <!-- ---------NEEDS TO BE SLIDING IMAGES--------- -->
     <div class="featureCon">
         <video src="video/ad.mp4" controls autoplay width="100%"></video>
     </div>
         </section>
 
         <section id="Categories">
-            <h2>Categories</h2>
+            <h2>CATEGORIES</h2>
 
             <div id="category_boxs">
                 <div class="cat1 cat">
@@ -50,7 +50,7 @@ export default {
         </section>
 
         <section id="AroundYou">
-            <h2>Around You</h2>
+            <h2>AROUND YOU</h2>
 
             <div id="aroundYou_boxs">
                         <div class="b1 box">
@@ -81,12 +81,12 @@ export default {
                             <h3>London, ON</h3>
                         </div>
             </div>
-
-            <div id="catButton 123">
-                <a href="#" class="catButton">View All</a>
-            </div>
             
         </section>
     </section>
-    `
+    `,
+
+    created: function() {
+        console.log("Index Page Rendered");
+    }
 }

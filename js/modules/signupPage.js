@@ -37,19 +37,7 @@ export default {
     </section>
     `,
 
-    data: function() {
-        return {
-            message: "data laoding"
-        }
-    },
-
-    methods: {
-        signUp() {
-            console.log('clicked on sign up')
-        },
-
-        login(){
-            console.log('clicked on login')
-        }
+    created: function() {
+        console.log("Sign Up Page Rendered");
     }
 }
