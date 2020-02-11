@@ -20,6 +20,7 @@ function login($email, $password, $date){
         //user exists
         $get_user_query = 'SELECT * FROM tbl_user WHERE user_email= :email';
         $get_user_query .= ' AND user_pword = ":password"';
+        exit;var_dump;
         $user_check = $pdo->prepare($get_user_query);
         $user_check->execute(
             array(

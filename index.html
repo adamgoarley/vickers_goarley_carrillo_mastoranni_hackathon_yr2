@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.15/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <title>Ontario Tourism</title>
+</head>
+
+<body id="appPage">
+
+    <main id="app">
+        <div>
+            <div>
+                <img src="images/log.svg" alt="Ontario Summer">
+            </div>
+            <div>
+                <router-link to="/signup">LOGIN/ SIGNUP</router-link>
+                <router-link to="/app">HOME</router-link>
+            </div>
+        </div>
+    
+            <router-view>
+                <!-- this is like the {{body}} in handle bars -->
+            </router-view>
+    </main>
+
+
+    <footer>
+        <div id="footer">
+
+        </div>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>

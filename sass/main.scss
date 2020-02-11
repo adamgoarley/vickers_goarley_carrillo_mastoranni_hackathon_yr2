@@ -1,5 +1,6 @@
 // this is where all the modules will be imported 
 @import '_vars';
+@import 'modules/_form';
 
 // these are some main little styling addons
 
@@ -338,10 +339,10 @@ header
 
 @media screen and (min-width: 960px) {
 
-    #category_boxs, #aroundYou_boxs
-    {
+    // #category_boxs, #aroundYou_boxs
+    // {
        
-    }
+    // }
 
     .b4
     {

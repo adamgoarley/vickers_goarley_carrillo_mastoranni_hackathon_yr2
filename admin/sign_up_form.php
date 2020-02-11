@@ -19,6 +19,7 @@ if(!empty($firstName) && !empty($lastName) && !empty($password) && !empty($email
 }
 }
 
+// this will start the verification of the email and password
 if(isset($_POST['login'])){
     $email = trim($_POST['email']);
     $password = trim($_POST['password']);
@@ -46,10 +47,10 @@ if(isset($_POST['login'])){
 <body id="formsPage">
 
     <!-- this is the sign up form -->
-    <div class="signUp">
+    <div class="signup">
         <h2>Sign Up</h2>
         <?php echo !empty($message)? $message: ''; ?>
-        <form action="sign_up.php" method="post">
+        <form action="scripts/sign_up.php" method="post">
 
             <input type="text" name="firstName" id="firstName" value="" placeholder='First Name'>
 
@@ -70,7 +71,7 @@ if(isset($_POST['login'])){
     <!-- this is the login form -->
     <div class="login">
         <h2>Login</h2>
-        <form action="login.php" method="post">
+        <form action="scripts/login.php" method="post">
         <?php echo !empty($message)? $message: ''; ?>
 
             <input type="text" name="email" id="email" value="" placeholder='Email'>
