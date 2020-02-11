@@ -12,7 +12,7 @@ if(isset($_POST['signUp'])){
 
 // this to check if the user has filled out the full sign up form
 if(!empty($firstName) && !empty($lastName) && !empty($password) && !empty($email) && !empty($country)){
-    //Log user in
+    //Log the user in
     $message = signUp($firstName, $lastName, $password, $email, $country);
 }else{
     $message = 'Please fill out the required fields below!';

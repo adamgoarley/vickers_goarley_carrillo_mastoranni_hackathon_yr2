@@ -1,7 +1,7 @@
 <?php
 
 // this function will check if the user is valid
-function login($email, $password){
+function login($email, $password, $date){
     $pdo = Database::getInstance()->getConnection();
     // setting the time zone
     date_default_timezone_set('America/Toronto');
@@ -12,13 +12,14 @@ function login($email, $password){
         array(
             ':email' => $email,
         )
+
     );
 
     // if the user is valid the login will run
     if($user_set->fetchColumn()>0){
         //user exists
         $get_user_query = 'SELECT * FROM tbl_user WHERE user_email= :email';
-        $get_user_query .= ' AND user_pass = :password';
+        $get_user_query .= ' AND user_pword = ":password"';
         $user_check = $pdo->prepare($get_user_query);
         $user_check->execute(
             array(

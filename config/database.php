@@ -1,6 +1,7 @@
 <!-- configuring the database -->
 
 <?php
+
 class Database{
     
     // Note: specify your own database credentials
@@ -16,6 +17,8 @@ class Database{
 
     public $conn;
 
+
+    // This is building the db connection
     private function __construct(){
         $db_dsn = array(
             'host'    => $this->host,
@@ -41,6 +44,7 @@ class Database{
             );
             exit;
         }
+
     }
 
     // get the database connection
@@ -55,4 +59,5 @@ class Database{
 
         return self::$instance;
     }
+
 }
