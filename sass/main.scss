@@ -1,15 +1,18 @@
 // this is where all the modules will be imported 
 @import '_vars';
 @import 'modules/_form';
+@import 'modules/_footer';
 
 // these are some main little styling addons
 
 body
 {
-    background-color: #ffffff;
+    background-color: $background-color;
     align-content: center;
 }
-
+video{
+    width: 90%;
+}
 main
 {
     width: 100%;
@@ -30,6 +33,9 @@ h1, h2, h3
     margin: 0;
 }
 
+h2{
+    color: $button-color;
+}
 p 
 {
     font-family: 'Lato', sans-serif;
@@ -182,7 +188,7 @@ header
 }
 
 .catButton {
-    border: 2px solid #307BC6;
+    border: 2px solid $button-color;
 	border-radius: 50px;
 	display:inline-block;
 	cursor:pointer;
@@ -198,7 +204,7 @@ header
 
 .catButton:hover 
 {
-    background-color:#307BC6;
+    background-color: $button-color;
     transition: ease-in;
     color: white;
 }
