@@ -14,13 +14,10 @@
 <div id="container">
     <header>
     <div class="container">
-        <input type="text" name="box" i class="fa fa-search" placeholder="Search...">
-        
-        <div class="btn">
-            <a href="#"><i class="fa fa-search"></i></a>
-        </div>
+        <img src="./public/images/logo.svg" class="logo" alt="">
+        <img src="./public/images/icon.svg" class="icon" alt="">
     </div>
-</div>
+
 
     </header>
 
@@ -29,7 +26,7 @@
         <section id="Featured" >
            <h2 class="">Featured</h2>  <!-- ---------NEEDS TO BE SLIDING IMAGES--------- -->
            <div class="featureCon">
-                <img src="./public/images/nature.jpg" class="responsive" alt="landing image">
+                <video src="./public/video/ontario_summer.mp4" controls width="100%"></video>
            </div>
         </section>
 
@@ -105,10 +102,6 @@
                             <p>Entertainment</p>
                             <h3>London, ON</h3>
                         </div>
-            </div>
-
-            <div id="catButton 123">
-                <a href="#" class="catButton">View All</a>
             </div>
             
         </section>
