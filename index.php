@@ -107,19 +107,24 @@
                         </div>
             </div>
 
-            <div id="catButton">
+            <div id="catButton 123">
                 <a href="#" class="catButton">View All</a>
             </div>
             
         </section>
-        <footer>
-            <div id="footer">
-
-            </div>
-        </footer>
+        
 
     </main>
+
+    <footer>
+        <div id="footer">
+
+        </div>
+    </footer>
+    
+    
     
 </div>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
