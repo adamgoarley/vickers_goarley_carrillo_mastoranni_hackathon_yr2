@@ -1,0 +1,9 @@
+## Redirect
+Redirect 301 /vickers_goarley_carrillo_mastoranni_hackathon_yr2/load.php /vickers_goarley_carrillo_mastoranni_hackathon_yr2
+Redirect 301 /load.php /
+
+
+## Deny access
+<FilesMatch "\.?htaccess$">
+    deny from all
+</FilesMatch>
